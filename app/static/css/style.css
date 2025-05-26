@@ -1,81 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+}
+
+body {
     background-color: #121829;
     color: white;
-
-}
-
-.nav-bar{
-    height: 20%;
-    width: auto;
-    display: flex;
-    justify-content: end;
-
-}
-
-.herosection .contents{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-button{
-    margin: 5px;
-    margin-top: 10px;
-    margin-right: 10px;
-    background-color: #4169E1;
-    border-radius: 5px;
-    border: 0;
-    padding: 13px 20px;
-    display: inline-block;
-}
-
-button:hover{
-    background-color: #0d46f1;
-}
-
-.heroSection{
-    margin-top: 10px;
+/* Hero Section */
+.heroSection {
     text-align: center;
-    width: 100%;
-    height: auto;
+    padding: 40px 20px;
     display: flex;
+    flex: 1; /* take all availabe space*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 50px;
-    
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
-footer{
-    width: auto;
-    height: 30%;
+.logo-container {
+    margin: 30px 0;
+}
+
+.logo {
+    width: 300px;
+    max-width: 80%;
+    height: auto;
+}
+
+.welcome-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: rgb(217, 202, 202);
+}
+
+
+.accessButtons {
     display: flex;
+    gap: 25px;
+    flex-wrap: wrap; /* ensures card wrap to new rows*/
     justify-content: center;
-    gap: 200px;
-    margin-top: 5px;
 }
 
-footer .footer-content{
-    font-size: larger;
+.access-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 30px;
+    color: white;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.access-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.access-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4169E1;
+}
+
+.admin-card h3 {
+    color: #dc3545;
+}
+
+.access-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(192, 184, 184);
+}
+
+/* just for the gap */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.login-btn {
+    background-color: #4169E1;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #0d46f1;
+}
+
+.register-btn {
+    background-color: #4169E1;
+    color: white;
+    border: 2px solid #4169E1;
+}
+
+.register-btn:hover {
+    background-color: #0d46f1;
+    color: white;
+}
+
+.admin-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.admin-btn:hover {
+    background-color: #c82333;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
     list-style: none;
     display: flex;
-    gap: 50px;
     justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.logo{
-    width: 50%;
-    max-width: 480px;
-    min-width: 200px;
-    margin: 20px auto;
-    margin-top: 70px;
-    display: block;
+.footer-content li {
+    font-size: 16px;
+    opacity: 0.9;
 }
+

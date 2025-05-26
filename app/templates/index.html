@@ -7,27 +7,41 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <nav>
-        <div class= "nav-bar">
-        <button>Login</button>
-        <button>Register</button>
-        </div>
-    </nav>
 
-    <div>
-        <div class="heroSection">
-            <h1>🎓 Student Result Portal</h1>
+
+    <div class="heroSection">
+        <h1>🎓 Student Result Portal</h1>
+        <div class="logo-container">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="College Logo" class="logo">
+        </div>
+        <p class="welcome-text">Welcome to our Student Result Management System</p>
+        
+        <div class="accessButtons">
+            <div class="access-card student-card">
+                <h3>👨‍🎓 Student Portal</h3>
+                <p>Access your results and grades</p>
+                <div class="card-buttons">
+                    <a href="{{ url_for('student_login') }}" class="card-button login-btn">Login</a>
+                    <a href="{{ url_for('student_register') }}" class="card-button register-btn">Register</a>
+                </div>
+            </div>
+
+            <div class="access-card admin-card">
+                <h3>👨‍💼 Admin Portal</h3>
+                <p>Manage student results</p>
+                <div>
+                    <a href="{{ url_for('admin_login') }}" class="card-button admin-btn">Login</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
         <ul class="footer-content">
-            <li>📍Address: Lokanthali, Bhaktapur</li>
+            <li>📍 Address: Lokanthali, Bhaktapur</li>
             <li>📞 Phone: 01-6636700, 6636322</li>
             <li>📩 Email: samriddhicollege.edu.np</li>
         </ul>
     </footer>
-
 </body>
 </html>
