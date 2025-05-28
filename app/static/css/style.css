@@ -42,6 +42,11 @@ h1 {
     height: auto;
 }
 
+.body-section{
+    display: flex;
+    flex-direction: row;
+}
+
 .welcome-text {
     font-size: 18px;
     margin-bottom: 40px;
