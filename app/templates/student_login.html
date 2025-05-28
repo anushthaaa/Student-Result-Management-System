@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/student-login-css.css')}}"> -->
     
 </head>
 <body>
-    <div class="login-container">
-        <h2>👨‍🎓 Student Login</h2>
-        <form method="POST" action="{{ url_for('student_login') }}">
-            <input type="email" name="email" placeholder="Student Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit" class="login-button student-button">Login</button>
-        </form>
+    <div class="body-section">
+        <div class="logo-container">
+            <img src="{{url_for('static',filename='images/logo.png')}}" alt="college logo">
+
+            <!-- <p>"Logging in is the first step toward your next achievement."</p> -->
+
+        </div>
+        <div class="login-container">
+            <h2>👨‍🎓 Student Login</h2>
+            <form method="POST" action="{{ url_for('student_login') }}">
+                <input type="email" name="email" placeholder="Student Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="login-button student-button">Login</button>
+            </form>
+        </div>
     </div>
+
 </body>
 </html>

@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
+    <div class="body-section">
+        <div class="logo-container">
+            <img src="{{url_for('static',filename='images/logo.png')}}" alt="logo">
+
+            <!-- <p>"Don’t just browse. Belong."</p> -->
+        </div>
     <div class="login-container">
         <h2>👨‍🎓 Student Registration</h2>
         <form method="POST" action="{{ url_for('student_register') }}">
@@ -33,6 +39,7 @@
             <button type="submit" class="login-button student-button">Register</button>
         </form>
         
+    </div>
     </div>
 </body>
 </html>
