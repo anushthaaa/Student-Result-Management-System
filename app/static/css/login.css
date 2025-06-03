@@ -26,6 +26,14 @@ body {
     max-width: 400px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+}
+
+.only-login-container {
+    padding: 40px 20px;
+    margin: auto;
+    position: relative;
     
 }
 
@@ -39,6 +47,15 @@ body {
     margin: 30px 0;
 }
 
+.logo-register-container {
+    margin: 110px 0px;
+}
+
+.logo-register-container img{
+    width: 500px;
+    max-width: 80%;
+    height: auto;
+}
 
 .body-section{
     display: flex;
@@ -63,6 +80,7 @@ form {
 .input-group {
     margin-bottom: 20px;
 }
+
 
 input {
     width: 100%;
@@ -118,5 +136,37 @@ label {
     gap: 5px;
 }
 
+.error-message {
+  color: #ff4d4f;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 77, 79, 0.1);
+  padding: 8px 16px;
+  border-left: 4px solid #ff4d4f;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
 
+.back-arrow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-arrow:hover {
+    color: #ccc;
+}
 

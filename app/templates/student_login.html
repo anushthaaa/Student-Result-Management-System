@@ -16,8 +16,15 @@
             <!-- <p>"Logging in is the first step toward your next achievement."</p> -->
 
         </div>
-        <div class="login-container">
+        <div class="login-container only-login-container">
             <h2>👨‍🎓 Student Login</h2>
+
+            {% if error %}
+            <p class="error-message">⚠️ {{ error }}</p>
+            {% endif %}
+            
+            <a href="{{ url_for('home') }}" class="back-arrow">←</a>
+
             <form method="POST" action="{{ url_for('student_login') }}">
                 <input type="email" name="email" placeholder="Student Email" required>
                 <input type="password" name="password" placeholder="Password" required>
