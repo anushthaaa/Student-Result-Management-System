@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-color: #121829;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1d253a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.student-info {
+    background-color: #2a3447;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.results-section {
+    background-color: #2a3447;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.results-section h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #b02a37;
+}
+
